@@ -400,174 +400,221 @@ h2{
 .upcoming_event_section {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    max-width: 1200px;
-    padding: 50px 20px;
-    margin: auto;
+    width: 100%;
+    height: auto;
+    margin: 60px auto;
 }
 
 .upcoming_event_section .upcoming_event_view {
     position: relative;
+    width: 80%;
+    height: auto;
     flex: 2; /* Takes more space */
-    /* background-color: #f9f9f9; */
-    /* width: 40%; */
-    padding:20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 30px;
+/*    background: green;*/
 }
 
-.upcoming_event_section .upcoming_event_view .view_content img {
+.upcoming_event_view  .view_content{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.upcoming_event_view .view_content img {
     position: relative;
     width:100%;
-    border-radius: 20px !important;;
-    margin-bottom: 15px;
-    height: 500px;
-    padding: 20px 15px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
-.upcoming_event_section .upcoming_event_view .view_content {
+.upcoming_event_view .date {
     position: relative;
-    margin-bottom: 15px;
-}
-
-.upcoming_event_section .upcoming_event_view .date {
-    position: absolute;
-    left: 50%;
-    top: 87.99%;
-    transform: translate(-50%, -5%);
-    display: inline-block;
-    padding: 10px 20px;
+    bottom: 29px;
+    width: fit-content;
+    height: 50px;
+    margin: 0px auto;
+    display: block;
+    padding: 10px 35px;
     background-color: #000;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
     font-size: 14px;
+    border: 5px solid #fff;
 }
-.upcoming_event_section .upcoming_event_view .location {
+
+.upcoming_event_view .location {
     position: absolute;
-    left: 30px;
-    top:40px;
-    padding: 5px 20px;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    padding: 10px 20px;
     border-radius: 20px;
     color: #000;
+    font-size: 12px;
     background-color: #ffff;
 }
-.upcoming_event_section .upcoming_event_view .icon {
+
+.upcoming_event_view .location i{
+    margin-right: 5px;
+}
+
+.upcoming_event_view .icon {
     position: absolute;
-    right: 30px;
-    top:40px;
+    right: 0;
+    top:0;
+    margin: 30px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     text-align: center;
     align-items: center;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 13px;
     color: #000;
     background-color: #ffff;
+    cursor: pointer;
 }
 
-
-.upcoming_event_section .upcoming_event_view .write-up {
-    margin-top: 15px;
-}
-
-.upcoming_event_section .upcoming_event_view .write-up h2 {
+.upcoming_event_view .write-up {
     position: relative;
-    font-size: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.upcoming_event_view .write-up h2 {
+    position: relative;
+    font-size: 40px;
     line-height: 29px;
     width: 80%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     z-index: 2;
     color: #000;
     letter-spacing: -0.07;
-    background-color: yellow;
 }
-.upcoming_event_section .upcoming_event_view .write-up p{
+
+.upcoming_event_view .write-up p{
     position: relative;
     height: auto;
     width: 100%;
     margin-bottom: 20px;
+    display: flex;
+    font-size: 14px;
 }
-.upcoming_event_section .upcoming_event_view .write-up p .initial  {
+
+.upcoming_event_view .write-up p .initial  {
+    position: relative;
+    top: 2px;
     height: auto;
-    width: 50px;
-    margin-bottom: 20px;
-    border-radius: 50%;
+    margin: 0 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
     background: #444;
-
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-size: 12px;
 }
-.upcoming_event_section .upcoming_event_view .write-up h3{
+
+.upcoming_event_view .write-up h3{
     position: relative;
     height: auto;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
 }
 
-.upcoming_event_section .upcoming_event_view .timeline_event {
-    margin-top: 20px;
-}
-.upcoming_event_section .upcoming_event_view .timeline_event .timeline_title{
+.upcoming_event_view .write-up .event-info{
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    width: 90%;
+    height: auto;
+    font-size: 13px;
+    color: #4e4e4e;
+    margin-bottom: 20px;
+    display: block;
 }
-.upcoming_event_section .upcoming_event_view .timeline_event .card {
+
+.categories{
+    position: relative;
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: space-between;
-    background-color: #ccc;
-    padding: 10px 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.categories li{
+    padding: 10px 20px;
+    background-color: #bfbfbf;
+    width: fit-content;
+    height: 40px;
     border-radius: 20px;
-    margin-bottom: 10px;
-    height: 50px;
-    width: 70%;
+    font-size: 12px;
+    white-space: nowrap;
+    cursor: pointer;
 }
-.upcoming_event_section .upcoming_event_view .timeline_event .card .open_calender{
-    color: #555;
+
+.event-map{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    border-radius: 30px;
 }
+
+.event-map iframe{
+    width: 100%;
+    height: 300px;
+}
+
 .upcoming_event_section .payment_area {
+    position: relative;
+    width: 30%;
+    min-width: 30%;
     flex: 1; /* Takes less space */
     background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 30px;
+    padding: 40px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .upcoming_event_section .payment_area h3 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
 .upcoming_event_section .payment_area p {
     color: #444;
     margin-bottom: 20px;
+    font-size: 13px;
 }
 
-.upcoming_event_section .payment_area .btn-primary {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
+.upcoming_event_section .payment_area select{
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+}
+
+.upcoming_event_section .payment_area .pay-btn{
+    position: relative;
+    width: 90%;
+    height: 45px;
+    background-color: rgba(13, 13, 13, 0.9);
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-transform: uppercase;
+    border-radius: 20px;
+    text-transform: capitalize;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin: 10px auto;
+    display: block;
 }
 
-.upcoming_event_section .payment_area .btn-primary:hover {
+.upcoming_event_section .payment_area .pay-btn:hover {
     background-color: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .upcoming_event_section {
-        flex-direction: column;
-    }
-
-    .upcoming_event_section .upcoming_event_view,
-    .upcoming_event_section .payment_area {
-        flex: 1 1 100%;
-    }
 }
 
 /*///////////////////////////////////*/
