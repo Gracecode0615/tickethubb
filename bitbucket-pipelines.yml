@@ -1,0 +1,11 @@
+image: php:7.4
+
+pipelines:
+  default:
+    - step:
+        name: Deploy to Server
+        script:
+          - apt-get update && apt-get install -y ssh
+          - ssh-keyscan -H your-server-ip >> ~/.ssh/known_hosts
+          - scp -r ./ user@your-server-ip:/path/to/deployment/folder
+          - ssh user@your-server-ip 'cd /path/to/deployment/folder && composer install && php artisan migrate'
