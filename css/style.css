@@ -1,15 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar{
-    width: 3px; 
+::-webkit-scrollbar {
+    width: 3px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #7c7c7c;
     border-radius: 10px;
 }
@@ -19,32 +19,35 @@
     border-radius: 10px;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     background: #efefef;
     font-family: "Poppins", serif;
     scroll-behavior: smooth;
-    
-    -webkit-user-select: none; /* Safari */
-      -ms-user-select: none; /* IE 10 and IE 11 */
-      user-select: none; /* Standard syntax */
+
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     height: auto;
     padding: 10px 60px;
 }
 
-.header{
+.header {
     position: relative;
     width: 100%;
     height: 70px;
@@ -53,7 +56,7 @@ section{
     padding: 10px 40px;
 }
 
-.menu{
+.menu {
     position: relative;
     width: 150px;
     height: 50px;
@@ -61,7 +64,7 @@ section{
     border-radius: 30px;
 }
 
-.user{
+.user {
     position: relative;
     width: 50px;
     height: 50px;
@@ -69,7 +72,7 @@ section{
     border-radius: 30px;
 }
 
-.search-area{
+.search-area {
     position: relative;
     width: fit-content;
     height: auto;
@@ -77,14 +80,14 @@ section{
     display: block;
 }
 
-.search-area p{
+.search-area p {
     position: relative;
     width: 100%;
     text-align: center;
     font-size: 12px;
 }
 
-.search-area h3{
+.search-area h3 {
     font-size: 30px;
     text-align: center;
     letter-spacing: -0.9px;
@@ -92,7 +95,7 @@ section{
 }
 
 
-.category{
+.category {
     position: relative;
     width: 100%;
     height: auto;
@@ -100,7 +103,7 @@ section{
     justify-content: center;
 }
 
-.category li{
+.category li {
     position: relative;
     width: fit-content;
     height: auto;
@@ -108,7 +111,7 @@ section{
     margin: 0 10px;
 }
 
-.category li i{
+.category li i {
     position: relative;
     width: 50px;
     height: 50px;
@@ -125,15 +128,15 @@ section{
     transition: 0.4s ease-in-out;
 }
 
-.category li:hover i{
+.category li:hover i {
     transform: rotate(360deg);
 }
 
-.category li i:hover{
+.category li i:hover {
     top: 6px;
 }
 
-.category li span{
+.category li span {
     position: relative;
     width: 100%;
     font-size: 10px;
@@ -143,18 +146,19 @@ section{
     color: #000;
     text-align: center;
 }
+
 /*///////////////////////////////////*/
 /*///////////////////////////////////*/
 
-.near-event-card::-webkit-scrollbar{
+.near-event-card::-webkit-scrollbar {
     display: none;
 }
 
-.near-event-card{
+.near-event-card {
     overflow-x: visible;
 }
 
-.flex-hold{
+.flex-hold {
     position: relative;
     height: auto;
     width: 100%;
@@ -165,24 +169,24 @@ section{
     padding-top: 30px;
 }
 
-.flex-hold::-webkit-scrollbar{
+.flex-hold::-webkit-scrollbar {
     display: none;
 }
 
-.title{
+.title {
     position: relative;
     width: 100%;
     height: auto;
 }
 
-.title h1{
+.title h1 {
     position: relative;
     font-size: 20px;
     padding-left: 20px;
     letter-spacing: -0.7px;
 }
 
-.near-event-card .card-control{
+.near-event-card .card-control {
     position: relative;
     width: 300px;
     min-width: 310px;
@@ -195,25 +199,25 @@ section{
     transition: 0.4s;
 }
 
-.near-event-card .active-card{
+.near-event-card .active-card {
     bottom: 10px;
     width: 390px;
-    min-width: 400px!important;
+    min-width: 400px !important;
     height: 210px;
 }
 
-.near-event-card .card-control:nth-child(even){
+.near-event-card .card-control:nth-child(even) {
     bottom: 10px;
     height: 210px;
 }
 
-.near-event-card .card-control:hover{
+.near-event-card .card-control:hover {
     width: 390px;
-    min-width: 400px!important;
-/*    height: 200px;*/
+    min-width: 400px !important;
+    /*    height: 200px;*/
 }
 
-.near-event-card .card-control h2{
+.near-event-card .card-control h2 {
     position: relative;
     font-size: 20px;
     line-height: 29px;
@@ -224,7 +228,7 @@ section{
     display: none;
 }
 
-.near-event-card .card-control span{
+.near-event-card .card-control span {
     position: relative;
     font-size: 13px;
     z-index: 2;
@@ -232,15 +236,15 @@ section{
     display: none;
 }
 
-.near-event-card .card-control:hover h2{
+.near-event-card .card-control:hover h2 {
     display: block;
 }
 
-.near-event-card .card-control:hover span{
+.near-event-card .card-control:hover span {
     display: block;
 }
 
-.near-event-card .card-control button{
+.near-event-card .card-control button {
     position: absolute;
     top: 70%;
     left: 0%;
@@ -259,20 +263,20 @@ section{
     display: block;
 }
 
-.near-event-card .card-control button i{
+.near-event-card .card-control button i {
     transform: rotate(-45deg);
     transition: 0.6s ease-in-out;
 }
 
-.near-event-card .card-control:hover button{
+.near-event-card .card-control:hover button {
     width: 55%;
 }
 
-.near-event-card .card-control:hover button i{
+.near-event-card .card-control:hover button i {
     transform: rotate(80deg);
 }
 
-.near-event-card .card-control .overlay{
+.near-event-card .card-control .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -284,12 +288,12 @@ section{
     z-index: 1;
 }
 
-.near-event-card .card-control:hover .overlay{
+.near-event-card .card-control:hover .overlay {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
 
-.near-event-card .card-control img{
+.near-event-card .card-control img {
     position: absolute;
     top: 0;
     left: 0;
@@ -300,11 +304,11 @@ section{
     transition: 0.5s;
 }
 
-.near-event-card .card-control:hover img{
+.near-event-card .card-control:hover img {
     opacity: 0.3;
 }
 
-.near-event-card .card-control:hover button{
+.near-event-card .card-control:hover button {
     background: #ffffff;
     color: #000;
 }
@@ -312,7 +316,7 @@ section{
 /*///////////////////////////////////*/
 /*///////////////////////////////////*/
 
-.col-12{
+.col-12 {
     position: relative;
     width: 100%;
     height: auto;
@@ -323,7 +327,7 @@ section{
     gap: 10px;
 }
 
-.col-4{
+.col-4 {
     position: relative;
     width: 23.99%;
     height: 100px;
@@ -338,11 +342,11 @@ section{
     transition: 0.5s;
 }
 
-.col-4:hover{
+.col-4:hover {
     background: rgb(232, 251, 255);
 }
 
-.col-4 img{
+.col-4 img {
     position: relative;
     width: 35%;
     min-width: 35%;
@@ -351,7 +355,7 @@ section{
     object-fit: cover;
 }
 
-.col-4 .write-up{
+.col-4 .write-up {
     position: relative;
     width: 100%;
     min-width: 100%;
@@ -360,30 +364,32 @@ section{
     align-content: center;
 }
 
-.col-4 .write-up h2{
-    font-size: 14px!important;
-    width: 70%!important;
+.col-4 .write-up h2 {
+    font-size: 14px !important;
+    width: 70% !important;
     height: auto;
 }
 
-.col-4 .write-up p{
+.col-4 .write-up p {
     font-size: 11px;
 }
 
-.col-4 .write-up span i{
+.col-4 .write-up span i {
     position: relative;
     width: auto;
     margin: 0 3px 0 0;
 }
 
-.col-4 .write-up span{
+.col-4 .write-up span {
     font-size: 9px;
     color: #9f9f9f;
 }
-h2{
-    letter-spacing:-0.03;
+
+h2 {
+    letter-spacing: -0.03;
 }
-.col-2{
+
+.col-2 {
     width: 50%;
     position: relative;
     overflow: hidden;
@@ -408,14 +414,13 @@ h2{
 
 .upcoming_event_section .upcoming_event_view {
     position: relative;
-    width: 80%;
+    width: 40%;
     height: auto;
-    flex: 2; /* Takes more space */
     padding: 0 30px;
-/*    background: green;*/
+    /*    background: green;*/
 }
 
-.upcoming_event_view  .view_content{
+.upcoming_event_view .view_content {
     position: relative;
     width: 100%;
     height: auto;
@@ -424,7 +429,7 @@ h2{
 
 .upcoming_event_view .view_content img {
     position: relative;
-    width:100%;
+    width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 20px;
@@ -457,14 +462,14 @@ h2{
     background-color: #ffff;
 }
 
-.upcoming_event_view .location i{
+.upcoming_event_view .location i {
     margin-right: 5px;
 }
 
 .upcoming_event_view .icon {
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
     margin: 30px;
     width: 40px;
     height: 40px;
@@ -495,7 +500,7 @@ h2{
     letter-spacing: -0.07;
 }
 
-.upcoming_event_view .write-up p{
+.upcoming_event_view .write-up p {
     position: relative;
     height: auto;
     width: 100%;
@@ -504,7 +509,7 @@ h2{
     font-size: 14px;
 }
 
-.upcoming_event_view .write-up p .initial  {
+.upcoming_event_view .write-up p .initial {
     position: relative;
     top: 2px;
     height: auto;
@@ -519,7 +524,7 @@ h2{
     font-size: 12px;
 }
 
-.upcoming_event_view .write-up h3{
+.upcoming_event_view .write-up h3 {
     position: relative;
     height: auto;
     width: 100%;
@@ -527,7 +532,7 @@ h2{
     font-size: 15px;
 }
 
-.upcoming_event_view .write-up .event-info{
+.upcoming_event_view .write-up .event-info {
     position: relative;
     width: 90%;
     height: auto;
@@ -537,7 +542,7 @@ h2{
     display: block;
 }
 
-.categories{
+.categories {
     position: relative;
     width: 100%;
     height: auto;
@@ -547,7 +552,7 @@ h2{
     gap: 10px;
 }
 
-.categories li{
+.categories li {
     padding: 10px 20px;
     background-color: #bfbfbf;
     width: fit-content;
@@ -558,7 +563,7 @@ h2{
     cursor: pointer;
 }
 
-.event-map{
+.event-map {
     position: relative;
     width: 100%;
     height: auto;
@@ -566,7 +571,7 @@ h2{
     border-radius: 30px;
 }
 
-.event-map iframe{
+.event-map iframe {
     width: 100%;
     height: 300px;
 }
@@ -575,7 +580,8 @@ h2{
     position: relative;
     width: 30%;
     min-width: 30%;
-    flex: 1; /* Takes less space */
+    flex: 1;
+    /* Takes less space */
     background-color: #fff;
     border-radius: 30px;
     padding: 40px 20px;
@@ -593,13 +599,13 @@ h2{
     font-size: 13px;
 }
 
-.upcoming_event_section .payment_area select{
+.upcoming_event_section .payment_area select {
     width: 90%;
     margin: 10px auto;
     display: block;
 }
 
-.upcoming_event_section .payment_area .pay-btn{
+.upcoming_event_section .payment_area .pay-btn {
     position: relative;
     width: 90%;
     height: 45px;
@@ -617,10 +623,256 @@ h2{
     background-color: #0056b3;
 }
 
+.upcoming_event_view view_write-up {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.upcoming_event_view .view_write-up i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    color: #fff;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
 /*///////////////////////////////////*/
 /*///////////////////////////////////*/
 
-.footer{
+
+/*///////////////////////////////////*/
+/*///////////////////////////////////*/
+.upcoming_event_section .scan_area {
+    position: relative;
+    width: 400px;
+    min-width: ;
+    flex: 1;
+    /* Takes less space */
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*    display: none;*/
+}
+
+.upcoming_event_section .scan_area i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 10px;
+    width: 40px;
+    height: 40p x;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #818181;
+    cursor: pointer;
+
+}
+
+.upcoming_event_section .scan_area h3 {
+    font-size: 23px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.upcoming_event_section .scan_area p {
+    position: relative;
+    height: auto;
+    font-size: 12px;
+    color: rgba(83, 82, 82, 0.97);
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.upcoming_event_section .scan_area .event_time {
+    position: relative;
+    width: 80%;
+    min-width: 30%;
+    margin: auto;
+    flex: 1;
+    /* Takes less space */
+    background-color: rgba(46, 42, 42, 0.51);
+    color: #111;
+    border-radius: 30px;
+    padding: 4px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px
+}
+
+.upcoming_event_section .scan_area .event_time .time {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 7px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.upcoming_event_section .scan_area .event_time .event_date {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5rem;
+    /*    padding: 0 5px;*/
+    margin: 0px 5px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.upcoming_event_section .scan_area hr {
+    position: relative;
+    color: #000;
+    margin: auto;
+    border-radius: 3px solid #000;
+    /*    height: auto*/
+}
+
+.upcoming_event_section .scan_area img {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.upcoming_event_section .scan_area .download {
+    position: relative;
+    width: 90%;
+    height: 45px;
+    background-color: rgba(13, 13, 13, 0.9);
+    color: #fff;
+    border-radius: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px auto;
+    display: block;
+}
+
+
+
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+
+.upcoming_event_section .general_info {
+    position: relative;
+    width: 60%;
+    min-width: 30%;
+    /*    flex: 1;*/
+    /* Takes less space */
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upcoming_event_section .general_info h3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px
+}
+
+.upcoming_event_section .general_info .edit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.upcoming_event_section .general_info .contact-info {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 14px;
+}
+
+.upcoming_event_section .general_info form .form-group {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.upcoming_event_section .general_info form .form-group label {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.upcoming_event_section .general_info form .form-group label span {
+    height: auto;
+    font-size: 14px;
+    color: crimson;
+}
+
+.upcoming_event_section .general_info form .form-group span {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #444;
+}
+
+.upcoming_event_section .event_action {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    display: block;
+
+}
+
+.upcoming_event_section .event_action .btn {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-color: #7ae07a;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px auto;
+    display: block;
+}
+
+
+
+/*////////////////////////////////////////*/
+/*////////////////////////////////////////*/
+
+
+.footer {
     position: relative;
     width: 100%;
     height: auto;
@@ -630,7 +882,7 @@ h2{
     bottom: 0;
 }
 
-.footer nav{
+.footer nav {
     position: relative;
     width: 100%;
     height: auto;
@@ -640,23 +892,24 @@ h2{
     margin-bottom: 10px;
 }
 
-.footer nav li{
+.footer nav li {
     font-size: 13px;
     color: #fff;
     cursor: pointer;
 }
 
-.footer nav li:hover{
+.footer nav li:hover {
     color: #8d8d8d;
 }
 
-.footer hr{
+.footer hr {
     background-color: rgba(255, 255, 255, 0.2);
     width: 70%;
     height: 1px;
     margin-bottom: 10px;
 }
-.footer p{
+
+.footer p {
     color: #717171;
     font-size: 12px;
 }

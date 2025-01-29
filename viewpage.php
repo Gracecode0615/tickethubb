@@ -51,14 +51,10 @@
             </div>
 
 
-            <div class="write-up">
+            <div class="view_write-up">
                 <h2>Marion Events</h2>
-                <p>By: <span class="initial">w</span> Marion</p>
-                
-                <h3>About</h3>
-                
-                <span class="event-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quam sed et, tempore quod, ea omnis adipisci, neque aspernatur numquam minima unde rerum animi tenetur laudantium voluptatem exercitationem doloribus enim.</span>
-                
+                <br>
+
                 <div class="categories">
                     <li>Religion</li>
                     <li>Health</li>
@@ -69,25 +65,71 @@
                     <li>Special</li>
                 </div>
 
+
+                <div class="event_action">
+                    <button class="btn"><span class="fa fa-star"></span> Follow the conference</button>
+                    <button class="btn"><span class="fa fa-globe"></span> Go to the conference website</button>
+                    <button class="btn"><span class="fa fa-envelope"></span> Email the Organiser</button>
+                </div>
+
+                <!-- modal popup-->
+                <div class="scan_area">
+                    <i class="fa fa-x"></i>
+                    <h3>Marion Events Marion Events Marion Events Marion Events</h3>
+                    <p>Ticket will be active from</p>
+
+                    <div class="event_time">
+                        <span class="time">
+                            <li>9:00 PM</li>
+                            <li>12:00 PM</li>
+                        </span>
+                        <span class="event_date">
+                            <li>Jan 21, 2025</li>
+                            <li>Jan 21, 2025</li>
+                        </span>
+                    </div>
+                    <hr>
+                    <img src="img/QRcode.png" alt="qrcode">
+                    <button class="download"> <span class="fa fa-download"></span> Download Ticket</button>
+                </div>
+
                 <!-- Timeline Events -->
-                <div class="event-map">
-                    <h3>Map Location</h3>
-                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5400220792762!2d3.3200351731178888!3d6.579582622512939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b91e751d71485%3A0xf222ed73a7d14f9a!2sMurtala%20Muhammed%20International%20Airport!5e0!3m2!1sen!2sng!4v1737990435003!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
+                <div class="event-summary">
+
                 </div>
             </div>
 
         </div>
 
-        <!-- Payment Section -->
-        <div class="scan_area">
-            <h3>NSPPD NIGERIA PRAYER CONFERENCE 2025</h3>
-            <p>Tafawa Balewa Square</p>
-            <img class="QR-code" src="" alt="">
-            <span>General Admission</span>
-            <button class="download">Download tickets</button>
-            <button class="cancel">Cancel Order</button>
+        <!-- General info Section -->
+        <div class="general_info">
+            <h3><strong>General details</strong></h3>
+            <span class="edit"><a href="">Edit <i class="fa fa-edit"></i></a></span>
+            <p class=contact-info>Contact Information</p>
+            <form>
+                <div class="form-group">
+                    <label>First name <span>*</span></label>
+                    <span>Grace</span>
+                </div>
+                <div class="form-group">
+                    <label>last name <span>*</span></label>
+                    <span>Solomon</span>
+                </div>
+                <div class="form-group">
+                    <label>Email Address <span>*</span></label>
+                    <span>grace@gmail.com</span>
+                </div>
+                <div class="form-group">
+                    <label>Delivery method <span>*</span></label>
+                    <span>e-ticket</span>
+                </div>
+                <div class="form-group">
+                    <label>Phone numner <span>*</span></label>
+                    <span>+123456789</span>
+                </div>
+            </form>
+
+
 
             <div class="policy">
                 <h3>Refund Policy</h3>
