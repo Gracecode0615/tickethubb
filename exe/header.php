@@ -1,25 +1,13 @@
 <div class="header">
 
-    <div class="menu"></div>
+    <div class="create"><i class="fa fa-plus"></i> <p>Create Ticket</p> </div>
 
-    <div class="user"></div>
+    <div class="user">
+        <i class="fa fa-user"></i>
+        <div class="drop-down">
+            <li><i class="fa fa-gear"></i> Settings</li>
+            <li><i class="fa fa-sign-out"></i> Logout</li>
+        </div>
+    </div>
 
-</div>
-
-<div class="search-area">
-    
-    <p>Monday 20th, January</p>
-    <h3>Welcome, Marion</h3>
-
-    <input class="search" type="search" name="Search" placeholder="Enter Search" required>
-
-</div>
-
-<div class="category">
-    <li><i class="fa fa-music" aria-hidden="true"></i> <span>Entertainment</span></li>
-    <li><i class="fa fa-medkit" aria-hidden="true"></i> <span>Health</span></li>
-    <li><i class="fa fa-chair" aria-hidden="true"></i> <span>Recreational</span></li>
-    <li><i class="fa fa-heart" aria-hidden="true"></i> <span>Charity</span></li>
-    <li><i class="fa fa-suitcase" aria-hidden="true"></i> <span>Business</span></li>
-    <li><i class="fa fa-plus" aria-hidden="true"></i> <span>Religion</span></li>
 </div>

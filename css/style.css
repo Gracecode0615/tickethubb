@@ -56,20 +56,109 @@ section {
     padding: 10px 40px;
 }
 
-.menu {
+.create {
     position: relative;
     width: 150px;
     height: 50px;
     background-color: #000000;
     border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.create:hover{
+    background-image: linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgb(0, 245, 188));
+    padding: 15px 0;
+}
+
+.create:hover p{
+/*    color: #000;*/
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.create:hover i{
+    color:  rgba(2, 211, 249, 0.9);
+}
+
+.create i {
+    position: relative;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    color: #000;
+    text-align: center;
+    padding: 7px 0;
+    display: block;
+    margin-right: 5px;
+    background: #fff;
+}
+
+.create p {
+    color: #fff;
+    font-size: 11px;
+    transition: 0.5s;
 }
 
 .user {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #000000;
     border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.user i {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 30px;
+}
+
+.user .drop-down {
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    height: auto;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    display: none;
+}
+
+.user:hover .drop-down {
+    display: block;
+}
+
+.user .drop-down li {
+    position: relative;
+    font-size: 12px;
+    height: 40px;
+    padding: 10px 15px 0 10px;
+    border-bottom: 1px solid rgba(121, 121, 121, 0.62);
+    display: flex;
+}
+
+.user .drop-down li i {
+    position: relative;
+    bottom: 6px;
+    height: auto;
+    font-size: 13px;
+    color: #383838;
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.user .drop-down li:hover {
+    background: #dbdbdb;
 }
 
 .search-area {
@@ -330,7 +419,7 @@ section {
 .col-4 {
     position: relative;
     width: 23.99%;
-    height: 100px;
+    height: 90px;
     display: flex;
     justify-content: flex-start;
     background: #ffffff;
@@ -414,7 +503,7 @@ h2 {
 
 .upcoming_event_section .upcoming_event_view {
     position: relative;
-    width: 40%;
+    width: 90%;
     height: auto;
     padding: 0 30px;
     /*    background: green;*/
@@ -644,233 +733,148 @@ h2 {
     border-radius: 50%;
 }
 
-/*///////////////////////////////////*/
-/*///////////////////////////////////*/
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
 
-
-/*///////////////////////////////////*/
-/*///////////////////////////////////*/
-.upcoming_event_section .scan_area {
-    position: relative;
-    width: 400px;
-    min-width: ;
-    flex: 1;
-    /* Takes less space */
-    background-color: #fff;
-    border-radius: 30px;
-    padding: 40px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /*    display: none;*/
+.ticket-summary {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(64, 64, 64, 0.97);
+    z-index: 1;
+    display: none;
 }
 
-.upcoming_event_section .scan_area i {
+.ticket-summary .ticket-close{
     position: absolute;
     right: 0;
     top: 0;
-    margin: 5px 10px;
-    width: 40px;
-    height: 40p x;
-    border-radius: 50%;
-    text-align: center;
-    align-items: center;
-    line-height: 40px;
-    font-size: 13px;
-    color: #fff;
-    background-color: #818181;
+    margin: 20px 50px;
+    color: #ffff;
     cursor: pointer;
-
+    font-size: 20px;
 }
 
-.upcoming_event_section .scan_area h3 {
-    font-size: 23px;
-    margin-bottom: 2rem;
-    text-align: center;
+.ticket-summary .holder {
+    position: absolute;
+    width: 500px;
+    height: 90%;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    overflow: hidden;
 }
 
-.upcoming_event_section .scan_area p {
-    position: relative;
-    height: auto;
-    font-size: 12px;
-    color: rgba(83, 82, 82, 0.97);
-    text-align: center;
-    display: inline-block;
-    align-items: center;
-    margin-bottom: 10px;
-
-}
-
-.upcoming_event_section .scan_area .event_time {
-    position: relative;
-    width: 80%;
-    min-width: 30%;
-    margin: auto;
-    flex: 1;
-    /* Takes less space */
-    background-color: rgba(46, 42, 42, 0.51);
-    color: #111;
-    border-radius: 30px;
-    padding: 4px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px
-}
-
-.upcoming_event_section .scan_area .event_time .time {
-    position: relative;
+.ticket-summary .holder .action {
+    position: absolute;
     width: 100%;
     height: auto;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+.ticket-summary .holder .action i {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ticket-summary .holder figure {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
-    padding: 10px 7px;
-    font-size: 18px;
-    font-weight: 600;
 }
 
-.upcoming_event_section .scan_area .event_time .event_date {
+.ticket-summary .holder figure span {
     position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-    gap: 5rem;
-    /*    padding: 0 5px;*/
-    margin: 0px 5px;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.upcoming_event_section .scan_area hr {
-    position: relative;
-    color: #000;
-    margin: auto;
-    border-radius: 3px solid #000;
-    /*    height: auto*/
-}
-
-.upcoming_event_section .scan_area img {
-    position: relative;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.upcoming_event_section .scan_area .download {
-    position: relative;
-    width: 90%;
-    height: 45px;
-    background-color: rgba(13, 13, 13, 0.9);
-    color: #fff;
-    border-radius: 20px;
-    text-transform: capitalize;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 10px auto;
-    display: block;
-}
-
-
-
-
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-
-.upcoming_event_section .general_info {
-    position: relative;
-    width: 60%;
-    min-width: 30%;
-    /*    flex: 1;*/
-    /* Takes less space */
-    background-color: #fff;
+    width: 60px;
+    height: 60px;
     border-radius: 30px;
-    padding: 40px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgb(64, 64, 64);
 }
 
-.upcoming_event_section .general_info h3 {
+.ticket-summary .holder figure span:first-child {
+    left: -40px;
+}
+
+.ticket-summary .holder figure span:last-child {
+    right: -40px;
+}
+
+.ticket-summary .holder .ticket-img {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ticket-details {
     position: relative;
     width: 100%;
     height: auto;
-    margin-bottom: 20px
-}
-
-.upcoming_event_section .general_info .edit {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-}
-
-.upcoming_event_section .general_info .contact-info {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    color: #222;
-    font-size: 14px;
-}
-
-.upcoming_event_section .general_info form .form-group {
-    position: relative;
-    width: 100%;
-    height: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.ticket-details p {
+    position: relative;
+    width: 50%;
+    align-content: center;
+    font-size: 13px;
+    padding: 15px 40px;
+    /*    background: #a57d7d;*/
+}
+
+.ticket-details p span {
+    text-transform: capitalize;
+    color: #696969;
+    display: block;
+    font-size: 11px;
+}
+
+.qr-code {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 60px;
+}
+
+.qr-code p {
+    position: relative;
+    display: block;
+    font-size: 11px;
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
     text-align: left;
 }
 
-.upcoming_event_section .general_info form .form-group label {
+.qr-code img {
     position: relative;
-    width: 100%;
-    height: auto;
-    font-size: 14px;
-    text-transform: capitalize;
+    width: 100px;
+    margin-right: 20px;
 }
 
-.upcoming_event_section .general_info form .form-group label span {
-    height: auto;
-    font-size: 14px;
-    color: crimson;
-}
-
-.upcoming_event_section .general_info form .form-group span {
-    position: relative;
-    width: 100%;
-    height: auto;
-    font-size: 14px;
-    margin-left: 10px;
-    color: #444;
-}
-
-.upcoming_event_section .event_action {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 30px auto;
-    display: block;
-
-}
-
-.upcoming_event_section .event_action .btn {
-    position: relative;
-    width: 100%;
-    height: 45px;
-    background-color: #7ae07a;
-    color: #fff;
-    border-radius: 10px;
-    text-transform: capitalize;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 10px auto;
-    display: block;
-}
-
-
-
-/*////////////////////////////////////////*/
-/*////////////////////////////////////////*/
-
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
 
 .footer {
     position: relative;
