@@ -36,15 +36,7 @@
     <!--    /////////////////////////////////////////-->
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <nav>
-            <ul style="display:none">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+    <?php include 'exe/mobile-menu.php'; ?>
 
     <section class="upcoming_event_section">
         

@@ -2,7 +2,6 @@
     
     <p>Monday 20th, January</p>
     <h3>Welcome, Marion</h3>
-
     <input class="search" type="search" name="Search" placeholder="Enter Search" required>
 
 </div>

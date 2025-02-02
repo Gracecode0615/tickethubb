@@ -25,13 +25,13 @@ li {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 body {
     background: #efefef;
     font-family: "Poppins", serif;
     scroll-behavior: smooth;
-
     -webkit-user-select: none;
     /* Safari */
     -ms-user-select: none;
@@ -54,6 +54,7 @@ section {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
+    margin-bottom: 30px;
 }
 
 .create {
@@ -64,29 +65,28 @@ section {
     border-radius: 30px;
     display: flex;
     justify-content: center;
-    padding: 15px 0px;
+    padding: 17px 0px;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.create:hover{
+.create:hover {
     background-image: linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgb(0, 245, 188));
-    padding: 15px 0;
 }
 
-.create:hover p{
-/*    color: #000;*/
+.create:hover p {
+    /*    color: #000;*/
     font-size: 12px;
     font-weight: bold;
 }
 
-.create:hover i{
-    color:  rgba(2, 211, 249, 0.9);
+.create:hover i {
+    color: rgba(2, 211, 249, 0.9);
 }
 
 .create i {
     position: relative;
-    bottom: 5px;
+    bottom: 7px;
     width: 30px;
     height: 30px;
     border-radius: 20px;
@@ -102,6 +102,33 @@ section {
     color: #fff;
     font-size: 11px;
     transition: 0.5s;
+    letter-spacing: -0.5px;
+}
+
+.right-side-nav {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.top-nav {
+    position: relative;
+    width: fit-content;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-nav li {
+    position: relative;
+    font-size: 14px;
+    margin: 10px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.top-nav li:hover {
+    font-weight: 600;
 }
 
 .user {
@@ -183,13 +210,13 @@ section {
     margin-bottom: 10px;
 }
 
-
 .category {
     position: relative;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .category li {
@@ -234,6 +261,44 @@ section {
     display: block;
     color: #000;
     text-align: center;
+}
+
+.mobile-menu{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.mobile-menu ul{
+    position: relative;
+    width: 350px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.mobile-menu ul li{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 18px;
+    transition: 0.6s;
+}
+
+.mobile-menu ul li:hover{
+    background: #fff;
+    color: #000;
 }
 
 /*///////////////////////////////////*/
@@ -747,7 +812,7 @@ h2 {
     display: none;
 }
 
-.ticket-summary .ticket-close{
+.ticket-summary .ticket-close {
     position: absolute;
     right: 0;
     top: 0;
@@ -899,6 +964,7 @@ h2 {
 .footer nav li {
     font-size: 13px;
     color: #fff;
+    cursor: pointer;
     cursor: pointer;
 }
 
