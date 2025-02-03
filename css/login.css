@@ -1,0 +1,74 @@
+.sign-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.sign-section .holder {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.sign-section .holder img {
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sign-section .holder h2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sign-section .holder p {
+    position: relative;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    font-size: 13px;
+    width: 90%;
+}
+
+.sign-section .holder .action-nav {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #333;
+}
+
+.sign-section .holder .action-nav span {
+    position: relative;
+    width: 50%;
+    height: 50px;
+    background-image: linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgb(0, 245, 188));
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding: 14px;
+    font-size: 13px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    transition: 0.5s;
+}
+
+.sign-section .holder .action-nav span:last-child {
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+}
