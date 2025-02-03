@@ -301,6 +301,11 @@ section {
     color: #000;
 }
 
+.mobile-menu ul li:first-child{
+    background: #fff;
+    color: #000;
+}
+
 /*///////////////////////////////////*/
 /*///////////////////////////////////*/
 

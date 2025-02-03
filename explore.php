@@ -36,8 +36,11 @@
     <!--    /////////////////////////////////////////-->
 
     <!-- Mobile Menu -->
+    <!-- Mobile Menu -->
     <?php include 'exe/mobile-menu.php'; ?>
-
+    <!-- Mobile Menu -->
+    <!-- Mobile Menu -->
+    
     <section class="upcoming_event_section">
         
         <!-- Event Details -->
