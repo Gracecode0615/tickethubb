@@ -1,7 +1,7 @@
     <div class="ticket-summary">
-        
+
         <i class="ticket-close fa fa-close"></i>
-        
+
         <div class="holder">
 
             <figure>
@@ -33,8 +33,9 @@
 
     </div>
 
-<script>
-    $(".ticket-close").on('click', function(){
-        $(".ticket-summary").fadeOut(50);
-    })
-</script>
+    <script>
+        $(".ticket-close").on('click', function() {
+            $(".ticket-summary").fadeOut(50);
+        })
+
+    </script>
