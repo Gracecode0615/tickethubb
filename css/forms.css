@@ -6,6 +6,7 @@ input{
     padding-left: 20px;
     border-radius: 25px;
     background: rgba(227, 222, 222, 0.78);
+    font-family: "Poppins", serif;
 }
 
 select{
@@ -16,10 +17,12 @@ select{
     padding-left: 20px;
     border-radius: 25px;
     background: rgba(227, 222, 222, 0.78);
+    font-family: "Poppins", serif;
 }
 
 button{
     display: block;
     height: 50px;
     color: #fff;
+    font-family: "Poppins", serif;
 }
