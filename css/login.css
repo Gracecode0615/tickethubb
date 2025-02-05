@@ -3,6 +3,30 @@
     width: 100%;
     height: 100vh;
     background: #fff;
+    padding-top: 20px;
+}
+
+.sign-section .logo{
+    position: relative;
+    width: fit-content;
+    height: 45px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+.sign-section .logo i{
+    transform: rotate(45deg);
+}
+
+.sign-section .logo h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.sign-section .logo h2 span{
+    color: rgba(2, 211, 249, 0.9);
+/*    font-size: 14px;*/
 }
 
 .sign-section .holder {

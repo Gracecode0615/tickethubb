@@ -104,6 +104,7 @@ section {
     font-size: 11px;
     transition: 0.5s;
     letter-spacing: -0.5px;
+    font-weight: bold;
 }
 
 .right-side-nav {
@@ -126,10 +127,13 @@ section {
     margin: 10px 15px;
     cursor: pointer;
     transition: 0.5s;
+    letter-spacing: -0.4px;
+    font-weight: 600;
 }
 
 .top-nav li:hover {
-    font-weight: 600;
+    font-weight: bold;
+    color: rgba(0, 170, 201, 0.9);
 }
 
 .user {
@@ -173,6 +177,7 @@ section {
     padding: 10px 15px 0 10px;
     border-bottom: 1px solid rgba(121, 121, 121, 0.62);
     display: flex;
+    white-space: nowrap;
 }
 
 .user .drop-down li i {

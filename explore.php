@@ -9,6 +9,7 @@
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/forms.css" type="text/css">
+    <link rel="stylesheet" href="css/create-event.css" type="text/css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -28,7 +29,7 @@
 <body>
 
     <?php include 'exe/ticket.php'; ?>
-
+    
     <!-- Header -->
     <?php include 'exe/header.php'; ?>
 
@@ -95,9 +96,10 @@
                 
                 <input type="text" name="Name" placeholder="Full Name" required>
                 
-                <input type="email" name="Email" placeholder="Full Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
                 
                 <select name="paygate" required>
+                    <option selected disabled value="">Choose Payment</option>
                     <option value="Paystack">Paystack</option>
                 </select>
                 

@@ -14,20 +14,24 @@
                 <li>Event</li>
             </a>
             <a href="login.php">
-                <li>Sign in</li>
+                <li>Track my ticket</li>
             </a>
         </ul>
 
         <div class="user">
             <i class="fa fa-user"></i>
             <div class="drop-down">
-                <li><i class="fa fa-gear"></i> Settings</li>
+                <li><i class="fa fa-calendar"></i> My Events </li>
+                <li><i class="fa fa-gear"></i> Settings </li>
                 <li><i class="fa fa-sign-out"></i> Logout</li>
             </div>
         </div>
     </div>
 
 </div>
+
+<?php include 'create-event.php'; ?>
+
 
 <script>
     $(".create").on('click', function(){

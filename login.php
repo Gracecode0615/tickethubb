@@ -23,6 +23,10 @@
 <body>
 
     <div class="sign-section">
+        
+        <div class="logo">
+            <a href="index.php"><h2><i class="fa fa-ticket"></i> Ticket<span>place.</span></h2></a>
+        </div>
 
         <div class="holder">
 
@@ -133,7 +137,6 @@
 
     </div>
 
-
     <script>
         
         $(".sign").on('click', function() {
@@ -222,6 +225,7 @@
         
 
     </script>
+    
 </body>
 
 </html>

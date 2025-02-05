@@ -36,8 +36,6 @@
     <!-- Mobile Menu -->
     <!-- Mobile Menu -->
 
-    <?php include 'exe/create-event.php'; ?>
-
     <!--    /////////////////////////////////////////-->
     <!--    /////////////////////////////////////////-->
 
@@ -103,7 +101,6 @@
         $(".card-control").on('click', function() {
             window.location.href = "explore.php";
         })
-
     </script>
 
 </body>
