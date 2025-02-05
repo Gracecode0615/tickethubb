@@ -1,0 +1,127 @@
+.create_event{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+
+.create_event .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.create_event .holder{
+    position: absolute;
+    width: 450px;
+    height: auto;
+    background: #efefef;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.create_event .holder h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.create_event .holder .event_type{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    transition: 0.1s;
+    overflow: hidden;
+}
+
+.create_event .holder .event_type:focus-within{
+    border: 2px solid rgba(2, 211, 249, 0.9);
+    height: 170px;
+    overflow: visible;
+}
+
+.create_event .holder .event_type .plan{
+    position: relative;
+    width: 50%;
+    height: 70px;
+    display: flex;
+    padding: 10px;
+}
+
+.create_event .holder .event_type .plan input{
+    position: relative;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.create_event .holder .event_type .plan p{
+    position: relative;
+    margin-top: 11px;
+    width: fit-content;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.2px;
+    font-weight: bold;
+}
+
+.create_event .holder .event_type .plan p span{
+    font-size: 10px;
+    display: block;
+    color: #9b9b9b;
+    font-weight: 300;
+}
+
+.create_event .holder .event_type .price{
+    position: relative;
+    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.create_event .holder .event_type .price p{
+    position: relative;
+    margin-top: 11px;
+    width: fit-content;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.2px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.create_event .holder .event_type .price p span{
+    font-size: 10px;
+    display: block;
+    color: #9b9b9b;
+    font-weight: 300;
+}
+
+.create_event .holder .event_type .event-details{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0px 20px 10px 20px;
+}
+
+.create_event .holder .event_type .event-details li{
+    font-size: 13px;
+    margin-bottom: 10px;
+    list-style: square;
+}

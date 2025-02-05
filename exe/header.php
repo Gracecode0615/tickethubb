@@ -1,7 +1,7 @@
 <div class="header">
 
     <div class="create"><i class="fa fa-plus"></i>
-        <p>Create Ticket</p>
+        <p>Create Event</p>
     </div>
 
     <div class="right-side-nav">
@@ -28,3 +28,9 @@
     </div>
 
 </div>
+
+<script>
+    $(".create").on('click', function(){
+        $(".create_event").fadeIn();
+    })
+</script>
