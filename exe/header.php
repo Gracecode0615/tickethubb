@@ -7,23 +7,24 @@
     <div class="right-side-nav">
 
         <ul class="top-nav">
-            <a href="index.php">
-                <li>Home</li>
-            </a>
-            <a href="explore.php">
-                <li>Event</li>
-            </a>
-            <a href="login.php">
-                <li>Track my ticket</li>
-            </a>
+
+            <li><a href="index.php">Home</a></li>
+
+
+            <li><a href="events.php">Events</a></li>
+
+
+            <li><a href="login.php">Track my ticket</a></li>
+
         </ul>
 
         <div class="user">
             <i class="fa fa-user"></i>
             <div class="drop-down">
-                <li><i class="fa fa-calendar"></i> My Events </li>
-                <li><i class="fa fa-gear"></i> Settings </li>
-                <li><i class="fa fa-sign-out"></i> Logout</li>
+                <li><i class="bi bi-calendar4-week"></i> My Events </li>
+                <li><i class="bi bi-archive"></i> My Archive </li>
+                <li><i class="bi bi-gear"></i> Settings </li>
+                <li><i class="bi bi-box-arrow-right"></i> Logout</li>
             </div>
         </div>
     </div>
@@ -34,7 +35,8 @@
 
 
 <script>
-    $(".create").on('click', function(){
+    $(".create").on('click', function() {
         $(".create_event").fadeIn();
     })
+
 </script>

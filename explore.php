@@ -16,6 +16,9 @@
 
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--    Bootstrapicons cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- AJAX LIBs-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -62,20 +65,22 @@
                 <h2>Marion Events</h2>
                 <p>By: <span class="initial">w</span> Marion</p>
 
-                <h3>About</h3>
+                <h3>About Event</h3>
 
                 <span class="event-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quam sed et, tempore quod, ea omnis adipisci, neque aspernatur numquam minima unde rerum animi tenetur laudantium voluptatem exercitationem doloribus enim.</span>
+                
+                <h3>Event contact Info</h3>
+                <p><i class="bi bi-whatsapp"></i> +234806 508 6643</p>
+                <p><i class="bi bi-globe"></i>  <a href="https://www.gphixtech.com.ng" target="_blank">www.gphixtech.com.ng</a> </p>
+                <p><i class="bi bi-envelope-at-fill"> contact@gphixtech.com.ng</i></p>
 
-                <div class="categories">
-                    <li>Religion</li>
-                    <li>Health</li>
-                    <li>Entertainment</li>
-                    <li>Re-creaational</li>
-                    <li>Business</li>
-                    <li>Confrence</li>
-                    <li>Special</li>
-                </div>
-
+                <h3>Event Category</h3>
+                <!-- Event category -->
+                <!-- Event category -->
+                <?php include 'exe/event-category.php'; ?>
+                <!-- Event category -->
+                <!-- Event category -->
+                
                 <!-- Timeline Events -->
                 <div class="event-map">
                     <h3>Map Location</h3>
