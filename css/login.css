@@ -239,8 +239,9 @@
 
 .sign-section .holder .form-control .google img {
     position: relative;
-    bottom: 10px;
-    width: 31px;
+    bottom: 8px;
+    width: 27px;
+    height: 27px;
     margin: 0;
 }
 
