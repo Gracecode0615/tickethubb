@@ -94,7 +94,7 @@
                         <i class="fa fa-envelope"></i>
                     </div>
 
-                    <button>Reminde me</button>
+                    <button>Remind me</button>
 
                     <p class="text">Back to <span class="signbtn back-to-log">Login</span></p>
 
@@ -125,12 +125,12 @@
                     </div>
 
                     <div class="input-control">
-                        <input type="Password" name="Pass" placeholder="Password" required>
+                        <input type="Password" name="Pass"  placeholder="Password" required>
                         <i class="fa fa-lock"></i>
                     </div>
 
                     <div class="input-control">
-                        <input type="text" name="Pass2" placeholder="Comfirm Password" required>
+                        <input type="password" name="Pass2" placeholder="Comfirm Password" required>
                         <i class="fa fa-key"></i>
                     </div>
 
