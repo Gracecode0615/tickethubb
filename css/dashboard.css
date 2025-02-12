@@ -1,0 +1,699 @@
+/**    background-image: linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgb(0, 245, 188));*/
+.dash{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dash .col{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5s;
+}
+
+.dash .col:first-child{
+    width: 50px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.dash .col:last-child{
+    overflow-y: scroll;
+}
+
+.dash .col section{
+    display: none;
+}
+
+.dash .logo{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 0px auto 70px auto;
+    display: block;
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+.dash .logo h2{
+    position: relative;
+    width: fit-content;
+    height: auto;
+    padding: 12px;
+    font-size: 17px;
+    margin: auto;
+    display: flex;
+    gap: 2px;
+}
+
+.dash .logo h2 i{
+    position: relative;
+    top: 5px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    transform: rotate(50deg);
+    transition: 0.6s;
+/*    background: green;*/
+}
+
+.dash .logo:hover h2 i{
+    transform: rotate(410deg);
+}
+
+.dash .logo .logo-initial{
+    display: none;
+}
+
+.dash nav{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.dash nav li{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    font-size: 13px;
+    padding: 11px 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+}
+
+.dash nav .active{
+    border-right: 3px solid rgba(2, 211, 249, 0.9);
+}
+
+.dash nav li:hover{
+    border-right: 3px solid rgba(2, 211, 249, 0.9);
+}
+
+.dash nav li i{
+    font-size: 16px;
+    margin: auto 10px;
+    color: rgba(0, 173, 204, 0.9);
+}
+
+.dash nav .li-name{
+    position: relative;
+    top: 5px;
+    white-space: nowrap;
+    animation: fadeIn;
+    transition-duration: 2s;
+    display: none;
+}
+
+/*///////////////////////////////////*/
+/*///////////////////////////////////*/
+
+.dash .col .heading{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dash .col .heading .user{
+    position: relative;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: rgba(0, 128, 0, 0);
+    border-radius: 0;
+}
+
+.dash .col .heading .user .notification{
+    position: relative;
+    width: 50px;
+    height: 100%;
+    padding: 10px;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    background: #fff;
+}
+
+.dash .col .heading .user .notification i{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+/*    background: red;*/
+    display: block;
+}
+
+.dash .col .heading .user .notification .notify{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: red;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    margin: 15px;
+    z-index: 1;
+}
+
+.dash .col .heading .user .user-details{
+    position: relative;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.dash .col .heading .user .user-details i{
+    position: relative;
+    height: 100%;
+    color: #c1c1c1;
+    font-size: 25px; 
+    padding: 0;
+    align-content: center;
+}
+
+.dash .col .heading .user .user-details p{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 14px;
+    background: #fff;
+}
+
+.dash .col .heading .user .user-details span{
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    background: #fff;
+    top: 0%;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.dash .col .heading .user .user-details:hover span{
+    top: 100%;
+}
+
+.dash .col .heading .user .user-details span i{
+    position: relative;
+    font-size: 15px;
+    bottom: 5px;
+    
+}
+
+/*///////////////////////////////////*/
+/*///////////////////////////////////*/
+
+
+.page-intro{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-intro button{
+    position: relative;
+    width: fit-content;
+    height: 45px;
+    background: #000;
+    padding: 0 30px!important;
+    border-radius: 0;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.page-intro button:hover{
+    background-image: linear-gradient(45deg, rgb(0, 245, 188), rgba(2, 211, 249, 0.9));
+}
+
+.msg{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+    z-index: 10;
+    background: #fff;
+    top: 0;
+    right: 0;
+    margin: 80px 30px;
+    display: none;
+    animation: tada;
+    animation-duration: 2s;
+}
+
+.msg figure{
+    position: relative;
+    left: 0;
+    width: 5px;
+    max-height: 170px;
+    background: red;
+    float: left;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.msg h2{
+    font-size: 15px;
+    color: red;
+}
+
+.msg h2 span{
+    font-size: 12px;
+    font-weight: 300;
+    color: #000;
+}
+
+.msg i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/*///////////////////////////////////*/
+/*///////////////////////////////////*/
+
+.stats{
+    position: sticky;
+    top: 50px;
+    width: fit-content;
+    height: 120px;
+    background: #000;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 40px 20px 20px;
+    align-items: center;
+    gap: 40px;
+    z-index: 1;
+}
+
+.stats .holder{
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    border-left: 1px solid #efefef;
+    padding-left: 20px;
+}
+
+.stats .holder:first-child{
+    border-left: none;
+}
+
+.stats i{
+    position: relative;
+    font-size: 30px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 10px;
+    padding-top: 2px;
+}
+
+.stats h2{
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.stats h2 span{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.dash-top-nav{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px auto;
+    border-bottom: 1px solid #cccccc; 
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.dash-top-nav li{
+    position: relative;
+    top:2px;
+    width: fit-content;
+    height: auto;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid rgb(0, 245, 188);
+    color: #c9c9c9;
+}
+
+.dash-top-nav li{
+    position: relative;
+    top:2px;
+    width: fit-content;
+    height: auto;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    border: none;
+    color: #c9c9c9;
+    cursor: pointer;
+}
+
+.dash-top-nav li:hover{
+    color: #000000;
+    border-bottom: 4px solid rgba(2, 211, 249, 0.9);
+}
+
+.dash-top-nav .active{
+    color: #000000;
+    border-bottom: 4px solid rgba(2, 211, 249, 0.9);
+}
+
+.listing{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hd{
+   position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.hd span{
+    position: relative;
+    color: #acacac;
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.hd span:first-child{
+    width: 40%;
+}
+
+.td{
+   position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.td:hover{
+    background: #f8f8f8;
+}
+
+.td .img-hold{
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.td img{
+    position: relative;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin-right:  16px;
+    object-fit: cover;
+}
+
+.td span{
+    position: relative;
+    color: #000000;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 10px;
+    overflow: hidden;
+    align-content: center;
+}
+
+.td span:last-child{
+    overflow: visible;
+}
+
+.event-action:hover .action{
+    display: block;
+}
+
+.event-action .action{
+    position: absolute;
+    right: 0;
+    width: 80px;
+    top: 0;
+    right: 0;
+    display: none;
+    background: #fff;
+}
+
+.event-action .action span{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px!important;
+    text-align: left;
+    padding: 0 0 0 15px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.event-action .action span:hover{
+    background: #efefef;
+}
+
+/*///////////////////////////////////*/
+/*///////////////////////////////////*/
+
+.tickets-holder{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tickets-holder .tickets{
+    position: relative;
+    width: 250px;
+    height: auto;   
+    overflow: hidden;
+    background: #fff;
+    padding: 10px;
+}
+
+.tickets-holder .tickets img{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.tickets-holder .tickets h2{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.tickets-holder .tickets p{
+    position: relative;
+    font-size: 12px;
+}
+
+.tickets-holder .tickets .icons{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0 10px 0;
+}
+
+.tickets-holder .tickets .icons i{
+    position: relative;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.settings{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tab-control{
+    position: relative;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    margin-bottom: 50px;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.tab-control .tabs{
+    position: relative;
+    font-size: 12px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.tab-control .active{
+    font-weight: bold;
+    background: #d3d3d3;
+}
+
+.settings label{
+    position: relative;
+    width: auto;
+    font-size: 12px;
+}
+
+.settings p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.settings .form-control{
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.settings .form-control label{
+    position: relative;
+    width: auto;
+    padding-left: 20px;
+    font-size: 11px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.settings .form-control input{
+    margin-bottom: 20px;
+}
+
+.settings .form-control button{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background: #000;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.settings .account-details{
+    position: relative;
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.settings .holder{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+    justify-content: flex-start;
+    
+} 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

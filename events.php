@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Events</title>
 
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style-mobile.css" type="text/css">
     <link rel="stylesheet" href="css/forms.css" type="text/css">
     <link rel="stylesheet" href="css/create-event.css" type="text/css">
     <!-- Page Stylesheets -->

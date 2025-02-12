@@ -59,6 +59,14 @@ section {
     z-index: 5;
 }
 
+.header .menu-li{
+    display: none;
+}
+
+.header .close-li{
+    display: none;
+}
+
 .create {
     position: relative;
     width: 150px;
@@ -282,6 +290,7 @@ section {
     left: 0;
     bottom: 0;
     z-index: 10;
+    display: none;
 }
 
 .mobile-menu ul {
