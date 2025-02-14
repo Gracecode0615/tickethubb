@@ -2,11 +2,12 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    overflow-y: scroll;
     background: #fff;
     padding-top: 20px;
 }
 
-.sign-section .logo{
+.sign-section .logo {
     position: relative;
     width: fit-content;
     height: 45px;
@@ -14,19 +15,19 @@
     cursor: pointer;
 }
 
-.sign-section .logo i{
+.sign-section .logo i {
     transform: rotate(45deg);
 }
 
-.sign-section .logo h2{
+.sign-section .logo h2 {
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: -0.5px;
 }
 
-.sign-section .logo h2 span{
+.sign-section .logo h2 span {
     color: rgba(2, 211, 249, 0.9);
-/*    font-size: 14px;*/
+    /*    font-size: 14px;*/
 }
 
 .sign-section .holder {
@@ -56,7 +57,7 @@
     letter-spacing: -0.8px;
 }
 
-.sign-section .holder h2 b{
+.sign-section .holder h2 b {
     color: rgba(2, 211, 249, 0.9);
 }
 
@@ -124,7 +125,7 @@
     margin-bottom: 10px;
 }
 
-.sign-section .holder .form-control p{
+.sign-section .holder .form-control p {
     position: relative;
     width: 100%;
     height: auto;
@@ -137,13 +138,13 @@
     position: relative;
     width: 100%;
     display: block;
+    padding: 0 10px;
 }
 
 .sign-section .holder .form-control .input-control input {
     position: relative;
     width: 100%;
     height: 50px;
-    border: 1px solid #707070;
     border-radius: 30px;
     outline: none;
     margin-bottom: 10px;
@@ -155,7 +156,6 @@
     position: relative;
     width: 100%;
     height: 50px;
-    border: 1px solid #707070;
     border-radius: 30px;
     outline: none;
     margin-bottom: 10px;
@@ -168,12 +168,12 @@
     top: 0;
     left: 0;
     margin-top: 17px;
-    margin-left: 15px;
+    margin-left: 25px;
     color: #707070;
     display: block;
 }
 
-.sign-section .holder .form-control .input-control span{
+.sign-section .holder .form-control .input-control span {
     position: relative;
     width: 96%;
     height: auto;
@@ -184,7 +184,7 @@
     cursor: pointer;
 }
 
-.sign-section .holder .form-control .input-control span:hover{
+.sign-section .holder .form-control .input-control span:hover {
     font-weight: bold;
 }
 
@@ -233,13 +233,13 @@
     display: flex;
     justify-content: center;
     padding: 18px 0;
-    margin-bottom: 10px!important;
+    margin-bottom: 10px !important;
     font-size: 13px;
 }
 
 .sign-section .holder .form-control .google img {
     position: relative;
-    bottom: 8px;
+    bottom: 4px;
     width: 27px;
     height: 27px;
     margin: 0;
@@ -250,4 +250,56 @@
     height: auto;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+
+    .sign-section {
+        padding: 30px auto;
+    }
+
+    .sign-section .logo {
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .sign-section .holder {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        padding: 10px;
+    }
+
+    .sign-section .holder h2 {
+        font-size: 20px;
+    }
+
+    .sign-section .holder .form-control {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .sign-section .holder .form-control .input-control{
+        padding: 0;
+    }
+
+    .sign-section .holder .form-control .input-control i {
+        margin-top: 16px;
+        margin-left: 15px;
+    }
+
+
+    .sign-section .holder .form-control button {
+        width: 95%;
+        margin: 0 auto;
+
+    }
 }

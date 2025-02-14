@@ -62,7 +62,6 @@
                 <span class="icon"><i class="fa fa-archive"></i></span>
             </div>
 
-
             <div class="write-up">
                 <h2>Marion Events</h2>
                 <p>By: <span class="initial">w</span> Marion</p>

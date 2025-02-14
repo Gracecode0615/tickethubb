@@ -8,7 +8,7 @@
     <div class="right-side-nav">
 
         <ul class="top-nav">
-            
+
             <i class="bi bi-x-lg close-li"></i>
 
             <li><a href="index.php">Home</a></li>
@@ -22,19 +22,22 @@
         </ul>
 
         <div class="user">
+            
             <i class="fa fa-user"></i>
+            
             <div class="drop-down">
                 <li><i class="bi bi-calendar4-week"></i> My Events </li>
                 <li><i class="bi bi-archive"></i> My Archive </li>
                 <li><i class="bi bi-gear"></i> Settings </li>
                 <li><i class="bi bi-box-arrow-right"></i> Logout</li>
             </div>
+            
         </div>
-        
+
     </div>
-    
+
     <i class="bi bi-list menu-li"></i>
-    
+
 </div>
 
 <?php include 'create-event.php'; ?>
@@ -44,21 +47,26 @@
     $(".menu-li").on('click', function() {
         $(".right-side-nav").css({
             "right": "0",
-            "opacity": "1"
+            "opacity": "1",
         })
+        
+        $(".menu-li").fadeOut(0);
     })
-    
+
     $(".close-li").on('click', function() {
         $(".right-side-nav").css({
             "right": "-100%",
             "opacity": "0",
             "z-index": "0"
         })
+        
+        $(".menu-li").fadeIn(0);
     })
-    
+
     //////////////////////////////////
     //////////////////////////////////
     $(".create").on('click', function() {
         $(".create_event").fadeIn();
     })
+
 </script>

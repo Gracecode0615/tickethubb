@@ -1,4 +1,4 @@
-.events{
+.events {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -6,7 +6,7 @@
     justify-content: flex-start;
 }
 
-.events .col{
+.events .col {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -14,22 +14,22 @@
     overflow-y: scroll;
 }
 
-.events .col:first-child{
+.events .col:first-child {
     min-width: 23%;
     width: 23%;
     padding: 20px;
 }
 
-.events .col:last-child{
+.events .col:last-child {
     padding-bottom: 170px;
 }
 
-.events .col .title{
+.events .col .title {
     font-size: 13px;
     margin: 20px 5px;
 }
 
-.events .col .holder{
+.events .col .holder {
     position: relative;
     width: 80%;
     height: 200px;
@@ -41,7 +41,7 @@
     overflow: hidden;
 }
 
-.events .col .holder img{
+.events .col .holder img {
     position: relative;
     width: 250px;
     height: auto;
@@ -51,7 +51,7 @@
     border-radius: 10px;
 }
 
-.events .col .holder .write-up{
+.events .col .holder .write-up {
     position: relative;
     width: auto;
     height: auto;
@@ -59,7 +59,7 @@
     z-index: 2;
 }
 
-.events .col .holder .write-up h2{
+.events .col .holder .write-up h2 {
     position: relative;
     width: 80%;
     font-size: 18px;
@@ -67,11 +67,11 @@
     cursor: pointer;
 }
 
-.events .col .holder:hover .write-up h2{
+.events .col .holder:hover .write-up h2 {
     color: rgba(0, 158, 186, 0.9);
 }
 
-.events .col .holder .write-up p{
+.events .col .holder .write-up p {
     position: relative;
     width: 100%;
     height: auto;
@@ -82,7 +82,7 @@
     cursor: pointer;
 }
 
-.events .col .holder .write-up .promo{
+.events .col .holder .write-up .promo {
     position: absolute;
     right: 0;
     top: 0;
@@ -94,7 +94,7 @@
     cursor: pointer;
 }
 
-.events .col .holder .write-up span{
+.events .col .holder .write-up span {
     position: relative;
     width: 100%;
     height: auto;
@@ -103,7 +103,7 @@
     cursor: pointer;
 }
 
-.events .col .holder i{
+.events .col .holder i {
     position: absolute;
     top: 100px;
     right: -60px;
@@ -113,8 +113,79 @@
     transition: 0.5s ease-in-out;
 }
 
-.events .col .holder:hover i{
+.events .col .holder:hover i {
     top: 90px;
     right: 0px;
     color: rgba(197, 244, 255, 0.62);
+}
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    .events {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .events .col {
+        height: auto;
+    }
+
+    .events .col:first-child {
+        min-width: 80%;
+        width: 80%;
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    .events .col:first-child::-webkit-scrollbar {
+        display: none;
+    }
+
+    .events .col .holder {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 990px) {
+    .events .col:first-child {
+        min-width: 80%;
+        width: 90%;
+        padding: 0 20px;
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+    .events .col:first-child {
+        width: 100%;
+        padding: 0 15px;
+        margin: 5px auto;
+    }
+
+    .events .col .holder {
+        height: auto;
+        display: block;
+    }
+
+    .events .col .holder img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        z-index: 1;
+    }
+
+    .events .col .holder .write-up h2 {
+        width: 100%;
+    }
+
+    .events .col .holder i {
+        top: 85%;
+        right: -60px;
+        font-size: 240px;
+    }
+
+    .events .col .holder:hover i {
+        top: 70%;
+        right: -20%;
+    }
 }

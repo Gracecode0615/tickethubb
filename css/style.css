@@ -603,6 +603,8 @@ h2 {
     height: auto;
     padding: 0 30px;
     /*    background: green;*/
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .upcoming_event_view .view_content {

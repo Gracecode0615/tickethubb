@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login-tickethubb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <link rel="stylesheet" type="text/css" href="css/forms.css" />
     <link rel="stylesheet" type="text/css" href="css/login.css" />
     <link rel="stylesheet" type="text/css" href="css/animation/animate.css" />
 
@@ -158,7 +159,9 @@
                 "background-image": "linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgb(0, 245, 188))"
             })
 
-            $(".intro").fadeOut(100);
+            $(".intro").fadeOut(0);
+            
+//            $(".logo").fadeOut(0);
 
             ////////////////////////////////////
             ////////////////////////////////////
@@ -190,6 +193,8 @@
             })
 
             $(".intro").fadeOut(0);
+            
+            $(".logo").fadeIn(0);
 
             ////////////////////////////////////
             ////////////////////////////////////

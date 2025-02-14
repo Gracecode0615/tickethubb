@@ -1,4 +1,4 @@
-.create_event{
+.create_event {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,7 +8,11 @@
     display: none;
 }
 
-.create_event .overlay{
+.create_event i {
+    display: none;
+}
+
+.create_event .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -17,7 +21,7 @@
     background: rgba(0, 0, 0, 0.90);
 }
 
-.create_event .holder{
+.create_event .holder {
     position: absolute;
     width: 450px;
     height: auto;
@@ -30,11 +34,11 @@
     overflow: hidden;
 }
 
-.create_event .holder h2{
+.create_event .holder h2 {
     font-size: 18px;
 }
 
-.create_event .holder p{
+.create_event .holder p {
     position: relative;
     width: 100%;
     height: auto;
@@ -43,11 +47,11 @@
     margin-bottom: 20px;
 }
 
-.create_event .holder .nxt{
+.create_event .holder .nxt {
     display: none;
 }
 
-.create_event .holder .event_type{
+.create_event .holder .event_type {
     position: relative;
     width: 100%;
     height: 70px;
@@ -62,13 +66,13 @@
     overflow: hidden;
 }
 
-.create_event .holder .event_type:focus-within{
+.create_event .holder .event_type:focus-within {
     border: 2px solid rgba(2, 211, 249, 0.9);
     height: 170px;
     overflow: visible;
 }
 
-.create_event .holder .event_type .plan{
+.create_event .holder .event_type .plan {
     position: relative;
     width: fit-content;
     height: 70px;
@@ -76,13 +80,13 @@
     padding: 10px;
 }
 
-.create_event .holder .event_type .plan .radio{
+.create_event .holder .event_type .plan .radio {
     position: relative;
     width: 15px;
     margin-right: 10px;
 }
 
-.create_event .holder .event_type .plan p{
+.create_event .holder .event_type .plan p {
     position: relative;
     margin-top: 11px;
     width: fit-content;
@@ -92,14 +96,14 @@
     font-weight: bold;
 }
 
-.create_event .holder .event_type .plan p span{
+.create_event .holder .event_type .plan p span {
     font-size: 10px;
     display: block;
     color: #9b9b9b;
     font-weight: 300;
 }
 
-.create_event .holder .event_type .price{
+.create_event .holder .event_type .price {
     position: relative;
     width: 50%;
     height: 70px;
@@ -108,7 +112,7 @@
     padding: 10px;
 }
 
-.create_event .holder .event_type .price p{
+.create_event .holder .event_type .price p {
     position: relative;
     margin-top: 11px;
     width: fit-content;
@@ -119,27 +123,27 @@
     text-align: right;
 }
 
-.create_event .holder .event_type .price p span{
+.create_event .holder .event_type .price p span {
     font-size: 10px;
     display: block;
     color: #9b9b9b;
     font-weight: 300;
 }
 
-.create_event .holder .event_type .event-details{
+.create_event .holder .event_type .event-details {
     position: relative;
     width: 100%;
     height: auto;
     padding: 0px 20px 10px 20px;
 }
 
-.create_event .holder .event_type .event-details li{
+.create_event .holder .event_type .event-details li {
     font-size: 13px;
     margin-bottom: 10px;
     list-style: square;
 }
 
-.create_event .holder .event_type .event-details button{
+.create_event .holder .event_type .event-details button {
     position: absolute;
     width: fit-content;
     padding: 0px 10px;
@@ -152,13 +156,14 @@
     cursor: pointer;
 }
 
-.event-q input{
+.event-q input {
     width: 100%;
+    height: 50px;
     margin: 0px auto 10px auto;
     display: block;
 }
 
-.event-q label{
+.event-q label {
     font-size: 11px;
     width: 100%;
     display: flex;
@@ -166,19 +171,19 @@
     margin-bottom: 5px;
 }
 
-.location-tab{
+.location-tab {
     position: relative;
     width: 100%;
     height: 40px;
     background: #cbcbcb;
-    margin: 10px 0 30px 0   ;
+    margin: 10px 0 30px 0;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
     gap: 1px;
 }
 
-.location-tab button{
+.location-tab button {
     position: relative;
     width: 50%;
     padding: 0 20px;
@@ -193,40 +198,40 @@
     white-space: nowrap;
 }
 
-.location-tab button:hover{
+.location-tab button:hover {
     background: rgba(2, 211, 249, 0.9);
 }
 
-.location-tab button:focus{
+.location-tab button:focus {
     background: rgba(2, 211, 249, 0.9);
 }
 
-.price-control{
+.price-control {
     position: relative;
     width: 100%;
     height: auto;
     display: flex;
 }
 
-.price-control input{
+.price-control input {
     padding-left: 31px;
 }
 
-.price-control span{
+.price-control span {
     position: absolute;
     left: 0;
     margin: 13px 20px;
     z-index: 2;
 }
 
-.time-hold{
+.time-hold {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.time-control{
+.time-control {
     position: relative;
     width: 50%;
     height: auto;
@@ -235,12 +240,12 @@
     flex-wrap: wrap;
 }
 
-.time-control label{
+.time-control label {
     display: block;
     width: 100%;
 }
 
-.time-control input{
+.time-control input {
     width: 100%;
     margin: 0 10px 0 0;
     font-size: 15px;
@@ -251,7 +256,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background: none;
 }
 
-.time-control span{
+.time-control span {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -263,15 +268,15 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-weight: 600;
 }
 
-.create_event .holder .action{
-   position: relative;
+.create_event .holder .action {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
 }
 
-.btn-nxt{
+.btn-nxt {
     position: relative;
     width: fit-content;
     padding: 0 20px;
@@ -284,7 +289,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 /*////////////////////////////////////////////*/
 /*////////////////////////////////////////////*/
 
-.e-success{
+.e-success {
     position: relative;
     width: 100%;
     height: auto;
@@ -293,7 +298,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     animation-duration: 0.6s;
 }
 
-.e-success i{
+.e-success i {
     position: relative;
     width: fit-content;
     height: auto;
@@ -305,24 +310,23 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     animation-iteration-count: infinite;
 }
 
-.e-success h2{
+.e-success h2 {
     position: relative;
     width: 100%;
     height: auto;
     text-align: center;
 }
 
-.e-success p{
+.e-success p {
     position: relative;
-    width: 80%!important;
+    width: 80% !important;
     height: auto;
     text-align: center;
     margin: 10px auto;
     display: block;
 }
 
-
-.e-success button{
+.e-success button {
     position: relative;
     width 300px;
     height: 45px;
@@ -330,4 +334,110 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border-radius: 40px;
     margin: 0 auto;
     background: #000;
+}
+
+/*////////////////////////////////////////////*/
+/*////////////////////////////////////////////*/
+
+@media (min-width: 0px) and (max-width: 600px) {
+
+    .create_event {
+        background: #efefef;
+    }
+
+    .create_event i {
+        display: block;
+        width: 20px;
+        height: 60px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .create_event .overlay {
+        display: none;
+    }
+
+    .create_event .holder {
+        height: 100%;
+        width: 100%;
+    }
+
+    .create_event .holder h2 {
+        margin-bottom: 10px;
+    }
+
+    .create_event .holder .action {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .btn-nxt {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .btn-nxt i {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        align-items: center;
+    }
+
+    .create_event .holder .action .btn-nxt:last-child {
+        width: fit-content;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .create_event .holder .event_type:focus-within {
+        height: 200px;
+    }
+
+    .create_event .holder .event_type .price {
+        width: 45%;
+    }
+
+    .create_event .holder .event_type .price p {
+        font-size: 12px;
+    }
+
+    .create_event .holder .event_type .plan p {
+        font-size: 13px;
+    }
+
+    .event-q input {
+        border-radius: 20px;
+    }
+
+    .create_event .holder .event_type .event-details button {
+        position: relative;
+        bottom: 0;
+    }
+
+    .time-control span {
+        margin: 14px 25px;
+        color: rgba(2, 186, 219, 0.9);
+    }
+
+    .e-success i {
+        width: fit-content;
+        font-size: 50px;
+        margin-top: 29%;
+    }
+
+    .e-success p {
+        width: 90% !important;
+        font-size: 13px!important;
+    }
+
+    .e-success button {
+        width: 80%!important;
+    }
+
 }

@@ -1,9 +1,12 @@
 <div class="create_event">
 
     <div class="overlay close-create"></div>
+    
+    
 
     <form class="holder">
-
+        
+        <i class="bi bi-x-lg close-create"></i>
 
         <div style="display: none" class="plan event-q">
 
@@ -107,6 +110,9 @@
                 <button class="private" type="button">To be Announced</button>
             </div>
 
+            <label>Event Location Name</label>
+            <input type="text" id="event-place" class="place" name="Place-name" placeholder="Enter event name of location" required>
+            
             <label>Event Venue</label>
             <input type="text" id="event-location" class="place" name="Place" placeholder="Enter event location" required>
 
@@ -268,7 +274,8 @@
     
     $("#event-location").on('input', function() {
         const eventLocation = document.getElementById("event-location").value;
-        if(eventLocation == ""){
+        const eventPlace = document.getElementById("event-place").value;
+        if(eventLocation == "" || eventPlace == ""){
             $(".nxt").fadeOut();
         }else{
             $(".nxt").fadeIn();

@@ -68,7 +68,7 @@
                     <p class="promo">Sponsored</p>
                     <h2>Traders Fair 2025 - Nigeria, 5 APRIL, LAGOS (Financial Event)</h2>
                     <p>Sat, Apr 5 • 10:00 AM</p>
-                    <p>Lagos Continental Hotel</p>
+                    <p><strong>Lagos Continental Hotel</strong></p>
                     <span>Event fee $0.00 || Business</span>
                 </div>
 

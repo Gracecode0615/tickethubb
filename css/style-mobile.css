@@ -7,6 +7,41 @@
     .col-4 {
         width: 30%;
     }
+
+    /*///////////////////////////////////*/
+    /*///////////////////////////////////*/
+
+    /* Styling scoped to the parent class upcoming_event_section */
+    .upcoming_event_section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 60px auto;
+    }
+
+    .upcoming_event_section aside {
+        width: 100%;
+        display: flex;
+        margin: 30px;
+    }
+
+    .upcoming_event_section .payment_area {
+        width: 40%;
+        min-width: 40%;
+    }
+
+    .upcoming_event_section .archive_area {
+        position: relative;
+        width: 100%;
+        background-color: #efefef;
+        padding: 20px 50px;
+        margin-top: 0px;
+    }
+
+    .upcoming_event_section .archive_area .col-4 {
+        width: 100%;
+        height: 130px;
+    }
+
 }
 
 @media (min-width: 0px) and (max-width: 800px) {
@@ -41,21 +76,22 @@
 
     .header .close-li {
         position: relative;
-        margin-bottom: 40px;
-        color: #fff;
+        bottom: 10px;
+        color: #000000;
         display: block;
         width: 100%;
+        margin-bottom: 60px;
+        font-size: 20px;
     }
 
     .right-side-nav {
         position: fixed;
         width: 80%;
         height: 100%;
-        background: #000000;
+        background: #ffffff;
         top: 0;
         right: -100%;
         opacity: 0;
-        z-index: 0;
         display: block;
         padding: 30px 20px 0 10px;
         transition: 0.5s;
@@ -72,15 +108,28 @@
     .right-side-nav .top-nav li {
         width: 100%;
         height: 50px;
-        color: #fff;
+        color: #000000;
         text-align: right;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         font-weight: 400;
         font-size: 15px;
     }
 
     .right-side-nav .user {
-        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 10px 30px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .right-side-nav .user i {
+        font-size: 16px;
+        text-align: center;
+        height: 50px;
+        width: 50px;
+        padding-top: 15px;
     }
 
     .search-area {
@@ -100,10 +149,37 @@
     .col-4 {
         width: 45%;
     }
+
+    .upcoming_event_section aside {
+        display: block;
+    }
+
+    .upcoming_event_section .payment_area {
+        width: 100%;
+        min-width: 100%;
+        margin: 20px auto 40px auto;
+    }
+
+    .upcoming_event_section .archive_area {
+        width: 100%;
+        min-width: 100%;
+        padding: 0px;
+        box-shadow: none;
+    }
+
+    .upcoming_event_section .archive_area .col-4 {
+        width: 49%;
+        height: 100px;
+    }
 }
 
-
 @media (min-width: 0px) and (max-width: 500px) {
+
+    .title h1 {
+        font-size: 15px;
+        padding-left: 10px;
+        margin-bottom: 0px;
+    }
 
     .search-area input {
         width: 100%;
@@ -128,6 +204,45 @@
         margin: 0 auto;
     }
 
+    .upcoming_event_section {
+        padding: 10px;
+        gap: 0;
+    }
+
+    .upcoming_event_section .upcoming_event_view {
+        width: 100%;
+        padding: 0 0px;
+    }
+
+    .upcoming_event_view .view_content {
+        margin-bottom: 0px;
+    }
+
+    .upcoming_event_view .write-up {
+        padding: 10px;
+    }
+
+    .upcoming_event_view .write-up h2 {
+        font-size: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .archive_area .title h1 {
+        padding: 0;
+    }
+
+    .upcoming_event_section aside {
+        width: 100%;
+        margin: 0;
+    }
+
+    .upcoming_event_section .archive_area .col-4 {
+        width: 109%;
+        height: 110px;
+    }
+
+
     /*    ////////////////////////////////////////*/
     /*    ////////////////////////////////////////*/
     .footer {
@@ -139,7 +254,6 @@
         gap: 10px 20px;
         padding: 0 10px;
     }
-
 
     .footer p {
         padding: 0 10px;
