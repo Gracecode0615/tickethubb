@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/forms.css" />
     <link rel="stylesheet" type="text/css" href="css/create-event.css" />
     <link rel="stylesheet" type="text/css" href="css/dashboard.css" />
+    <link rel="stylesheet" type="text/css" href="css/dashboard-mobile.css" />
     <link rel="stylesheet" type="text/css" href="css/animation/animate.css" />
 
     <!--    /////////////////////////////////-->
@@ -24,10 +25,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- AJAX LIBs-->
+    <!-- AJAX LIBs-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--    //////////////////////////-->
+
+    <!-- APPLICATION JAVASCRIPT-->
+    <script type="application/ecmascript" src="js/net.js"></script>
 </head>
 
 <body>
@@ -38,17 +43,25 @@
     <div class="dash">
 
         <div class="col aside">
+
+            <i class="bi bi-x nav-close"></i>
+
             <div class="logo">
                 <h2><i class="fa fa-ticket"></i> <span class="logo-initial">TP</span></h2>
             </div>
 
             <nav>
+
                 <li class="menu-item open-dashboard"><i class="bi bi-house-door-fill"></i> <span class="li-name">Dashboard</span></li>
+
                 <li class="menu-item open-events"><i class="bi bi-calendar-check-fill"></i> <span class="li-name">My Events</span></li>
 
                 <li class="menu-item open-tickets"><i class="bi bi-ticket-fill"></i> <span class="li-name">My Tickets</span></li>
+
                 <li class="menu-item open-promoted"><i class="bi bi-megaphone-fill"></i> <span class="li-name">Promotion</span></li>
+
                 <li class="menu-item open-setting"><i class="bi bi-gear-fill"></i> <span class="li-name">Settings</span></li>
+
             </nav>
 
             <script>
@@ -102,16 +115,42 @@
 
         <div class="col">
 
+            <div class="in-app-msg">
+                <h2>Notifications <i class="bi bi-x close-in-app-msg"></i></h2>
+
+                <div class="messaging">
+                    <i class="bi bi-chat-right-text"></i>
+                    <div>
+                        <h3>Welcome</h3>
+                        <p>Welcome to Tiketplace, we are bringing the world together through live experiences.</p>
+                        
+                        <div class="action">
+                            <i class="bi bi-check-all"></i>
+                            <i class="bi bi-trash3"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
             <div class="msg close-msg">
-                <figure></figure>
-                <h2 id="error-t">Error<br><span id="error-p">This is where all errors.</span></h2>
-                <i class="bi bi-x"></i>
+                <div class="holder">
+                    <figure></figure>
+                    <div>
+                        <h2 id="error-t">Error<br></h2>
+                        <span id="error-p">This is where all errors.</span>
+                    </div>
+
+                    <i class="bi bi-x"></i>
+                </div>
             </div>
 
             <div class="heading">
 
+                <i class="bi bi-list nav-open"></i>
+
                 <div class="user">
-                    <div class="notification">
+                    <div class="notification open-in-app-msg">
                         <span class="notify"></span>
                         <i class="bi bi-bell"></i>
                     </div>
@@ -143,8 +182,13 @@
                     </div>
 
                     <div class="holder">
+                        <i class="bi bi-calendar-check-fill"></i>
+                        <h2><span>Sold Events</span>$0.00</h2>
+                    </div>
+
+                    <div class="holder">
                         <i class="bi bi-ticket-perforated-fill"></i>
-                        <h2><span>Sold tickets</span>$0.00</h2>
+                        <h2><span>My Tickets </span>00</h2>
                     </div>
 
                     <div class="holder">
@@ -196,13 +240,13 @@
                 </div>
 
             </section>
-            
+
             <!--///////////////////////////////////////-->
             <!--///////////////////////////////////////-->
-            
+
             <section class="event-section">
 
-               <div class="listing">
+                <div class="listing">
 
                     <div class="hd">
                         <span></span>
@@ -228,6 +272,7 @@
                             <i class="bi bi-three-dots-vertical"></i>
 
                             <div class="action">
+                                <span>Promote</span>
                                 <span>Edit</span>
                                 <span>Delete</span>
                             </div>
@@ -277,7 +322,7 @@
 
             <!--///////////////////////////////////////-->
             <!--///////////////////////////////////////-->
-            
+
             <section class="promo-section">
 
                 <div class="tickets-holder">
@@ -290,6 +335,7 @@
 
                         <div class="icons">
                             <i class="bi bi-megaphone"></i>
+                            <i class="bi bi-trash3-fill"></i>
                         </div>
                     </div>
 
@@ -301,6 +347,7 @@
 
                         <div class="icons">
                             <i class="bi bi-megaphone"></i>
+                            <i class="bi bi-trash3-fill"></i>
                         </div>
                     </div>
 
@@ -313,6 +360,7 @@
             <section class="setting-section">
 
                 <div class="settings">
+
                     <div class="tab-control">
                         <div class="tabs open-profile active">Profile</div>
                         <div class="tabs open-billing">Billing</div>
@@ -383,24 +431,59 @@
         //// Side nav open and close//////////
         $(document).ready(function() {
             $(".logo").on("click", function() {
-                let aside = $(".aside");
-                let logoinitial = $(".logo-initial");
-                let liname = $(".li-name");
-                let navholder = $("nav");
-                let currentWidth = aside.width(); // Get current width in pixels
+                if ($(window).width() > 800) { // Only execute if screen width is greater than 800px
+                    let aside = $(".aside");
+                    let logoinitial = $(".logo-initial");
+                    let liname = $(".li-name");
+                    let navholder = $("nav");
+                    let currentWidth = aside.width(); // Get current width in pixels
 
-                if (currentWidth > 50) {
-                    aside.css("width", "50px");
-                    logoinitial.css("display", "none");
-                    liname.css("display", "none");
-                    navholder.css("padding-left", "0");
-                } else {
-                    aside.css("width", "20%");
-                    logoinitial.css("display", "inherit");
-                    liname.css("display", "inherit");
-                    navholder.css("padding-left", "30px");
+                    if (currentWidth > 50) {
+                        aside.css("width", "50px");
+                        logoinitial.css("display", "none");
+                        liname.css("display", "none");
+                        navholder.css("padding-left", "0");
+                    } else {
+                        aside.css("width", "20%");
+                        logoinitial.css("display", "inherit");
+                        liname.css("display", "inherit");
+                        navholder.css("padding-left", "30px");
+                    }
                 }
             });
+
+            $(".nav-open").on('click', function() {
+                let aside = $(".aside");
+                aside.css({
+                    "left": "0%",
+                    "opacity": "1"
+                });
+            })
+
+            $(".nav-close").on('click', function() {
+                let aside = $(".aside");
+                aside.css({
+                    "left": "",
+                    "opacity": "0"
+                });
+            })
+            
+            $(".open-in-app-msg").on('click', function() {
+                $(".notify").fadeOut(0);
+                let inappmsg = $(".in-app-msg");
+                inappmsg.css({
+                    "right": "0",
+                    "opacity": "1"
+                });
+            })
+            
+            $(".close-in-app-msg").on('click', function() {
+                let inappmsg = $(".in-app-msg");
+                inappmsg.css({
+                    "right": "",
+                    "opacity": "0"
+                });
+            })
         });
 
         //// Li active fuction //////////////
@@ -457,5 +540,6 @@
 
     </script>
 
+</body>
 
 </html>
