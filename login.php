@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/forms.css" />
-    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=<?php echo filemtime('css/style.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="css/forms.css?v=<?php echo filemtime('css/form.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="css/login.css?v=<?php echo filemtime('css/login.css'); ?>" />
     <link rel="stylesheet" type="text/css" href="css/animation/animate.css" />
 
     <!--    /////////////////////////////////-->

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ticket Hub</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/style-mobile.css" type="text/css">
-    <link rel="stylesheet" href="css/forms.css" type="text/css">
-    <link rel="stylesheet" href="css/create-event.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo filemtime('css/style.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="css/style-mobile.css?v=<?php echo filemtime('css/style-mobile.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="css/forms.css?v=<?php echo filemtime('css/forms.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="css/create-event.css?v=<?php echo filemtime('css/create-event.css'); ?>" type="text/css">
     <link rel="stylesheet" href="css/animation/animate.css" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

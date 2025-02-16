@@ -7,10 +7,10 @@
     <title>Events</title>
 
     <!-- External Stylesheets -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/style-mobile.css" type="text/css">
-    <link rel="stylesheet" href="css/forms.css" type="text/css">
-    <link rel="stylesheet" href="css/create-event.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo filemtime('css/style.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="css/style-mobile.css?v=<?php echo filemtime('css/style-mobile.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="css/forms.css?v=<?php echo filemtime('css/forms.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="css/create-event.css?v=<?php echo filemtime('css/create-event.css'); ?>" type="text/css">
     <!-- Page Stylesheets -->
     <link rel="stylesheet" href="css/events.css" type="text/css">
 

@@ -23,6 +23,7 @@ li {
     list-style: none;
 }
 
+
 a {
     text-decoration: none;
     color: inherit;
@@ -293,21 +294,33 @@ section {
     display: none;
 }
 
+.mobile-menu .mobile-menu-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
 .mobile-menu ul {
     position: relative;
-    width: 350px;
+    width: auto;
     height: 70px;
     display: flex;
     justify-content: space-between;
     background: #000000;
     border-radius: 50px;
-    margin: 0 auto;
+/*    margin: 0 auto;*/
     padding: 10px 10px;
+    transition: 0.6s;
 }
 
 .mobile-menu ul li {
     position: relative;
     width: 50px;
+    min-width: 50px;
     height: 50px;
     border-radius: 25px;
     color: #fff;
@@ -317,12 +330,7 @@ section {
     transition: 0.6s;
 }
 
-.mobile-menu ul li:hover {
-    background: #fff;
-    color: #000;
-}
-
-.mobile-menu ul li:first-child{
+.mobile-menu ul .active {
     background: #fff;
     color: #000;
 }
@@ -664,7 +672,7 @@ h2 {
     text-align: center;
     align-items: center;
     line-height: 40px;
-    font-size: 13px;
+    font-size: 17px;
     color: #000;
     background-color: #ffff;
     cursor: pointer;
@@ -727,6 +735,17 @@ h2 {
     color: #4e4e4e;
     margin-bottom: 20px;
     display: block;
+}
+
+.upcoming_event_view .float-love{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: red;
+    animation: fadeOutUpBig;
+    animation-duration: 4s;
+    display: none;
 }
 
 .categories {
@@ -828,22 +847,48 @@ h2 {
     display: block;
 }
 
-.upcoming_event_section .payment_area .pay-btn {
+.upcoming_event_section .payment_area .pay-btn, .reserve-btn {
     position: relative;
     width: 100%;
-    height: 45px;
+    height: 50px;
     background-color: rgba(13, 13, 13, 0.9);
     color: #fff;
-    border-radius: 20px;
-    text-transform: capitalize;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 10px auto;
     display: block;
 }
 
-.upcoming_event_section .payment_area .pay-btn:hover {
-    background-color: #0056b3;
+.upcoming_event_section .payment_area .pay-btn:hover, .reserve-btn:hover {
+    background-color: rgba(2, 211, 249, 0.9);
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.counter-container button {
+    background-color: #000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.counter-container button:hover {
+    background-color: #ddd;
+}
+
+.counter-container #count {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .upcoming_event_view view_write-up {
@@ -867,6 +912,38 @@ h2 {
     border-radius: 50%;
 }
 
+.payment_area .disclaimer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.payment_area .disclaimer input{
+    position: relative;
+    bottom: 10px;
+    width: 18px;
+    margin: 0 10px 0 0;
+    display: block;
+}
+
+.payment_area .disclaimer span{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 11px;
+    height: auto;
+    padding-top: 3px;
+    margin: 0;
+    bottom: 0;
+}
+
+.payment_area .ticket-form{
+    display: none;
+}
+
 /*//////////////////////////////////////*/
 /*//////////////////////////////////////*/
 
@@ -877,7 +954,7 @@ h2 {
     top: 0;
     left: 0;
     background: rgba(64, 64, 64, 0.97);
-    z-index: 1;
+    z-index: 20;
     display: none;
 }
 
@@ -1005,6 +1082,7 @@ h2 {
     position: relative;
     width: 100px;
     margin-right: 20px;
+    object-fit: contain;
 }
 
 /*//////////////////////////////////////*/

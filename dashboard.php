@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/forms.css" />
-    <link rel="stylesheet" type="text/css" href="css/create-event.css" />
-    <link rel="stylesheet" type="text/css" href="css/dashboard.css" />
-    <link rel="stylesheet" type="text/css" href="css/dashboard-mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=<?php echo filemtime('css/style.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="css/forms.css?v=<?php echo filemtime('css/form.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="css/create-event.css?v=<?php echo filemtime('css/create-event.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css?v=<?php echo filemtime('css/dashboard.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="css/dashboard-mobile.css?v=<?php echo filemtime('css/dashboard-mobile.css'); ?>" />
     <link rel="stylesheet" type="text/css" href="css/animation/animate.css" />
 
     <!--    /////////////////////////////////-->
@@ -111,6 +111,7 @@
                 })
 
             </script>
+            
         </div>
 
         <div class="col">
@@ -461,6 +462,14 @@
             })
 
             $(".nav-close").on('click', function() {
+                let aside = $(".aside");
+                aside.css({
+                    "left": "",
+                    "opacity": "0"
+                });
+            })
+            
+            $("section").on('click', function() {
                 let aside = $(".aside");
                 aside.css({
                     "left": "",
